@@ -5,26 +5,23 @@
 - `turtlesim` 패키지를 사용하여 키보드로 거북이를 조작하고, 노드 간의 데이터 흐름을 확인한다.
 
 ---
-## 2. 실습 과정
+## 2. 학습 내용
   
 - **작성자** : 윤우린
 - **작성일** : 2025-09-23
 
 ---
+## 3. 실습 결과
 
-- **작성자** : 이태웅
-- **작성일** : 2025-09-23
+  **1. 이태웅** (09/23)
 <figure>
     <img src="https://i.esdrop.com/d/f/TofYJ3q0s2/dwU2Clnpeu.png" title="1주차 실습">    
     <figcaption>1주차 실습</figcaption>
 </figure>
 
 ---
-- **작성자** : 남지연
-- **작성일** : 2025-09-23
-- **학습 내용**
-- `ros2 run turtlesim turtlesim_node`
-- 
+**2. 남지연** (09/23)
+
 <img width="460" height="479" alt="image" src="https://github.com/user-attachments/assets/0cb5594b-7e10-4c9f-a008-9c11dfe75968" />
 
 ---
