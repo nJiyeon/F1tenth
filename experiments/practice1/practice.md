@@ -27,6 +27,6 @@
 ---
 **3. 윤우린** (09/23)
 
-<img width="460" height="479" alt="image" src=""C:\Users\balka\Desktop\KakaoTalk_20250923_233747775.png"" />
+<img width="717" height="702" alt="Image" src="https://github.com/user-attachments/assets/b3f0a9d3-1b9e-4654-9187-175b5f118bcb" />" />
 
 ---
