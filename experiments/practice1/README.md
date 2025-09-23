@@ -1,4 +1,4 @@
-# Week 1: Turtlesim 실습 
+# Practice 1: Turtlesim 실습 
 <img width="432" height="448" alt="image" src="https://github.com/user-attachments/assets/f643cf06-ecb4-4758-be6f-3ea741fcc535" />
 
 ## 1. 실습 목적
