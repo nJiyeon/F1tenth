@@ -47,7 +47,7 @@ F1Tenth 차량(실제 자동차의 1/10 스케일)을 제작하고,
 
 ---
 
-## 📂 Repository 구조 (예시)
+## 📂 Repository 구조
 ```plaintext
 📦 프로젝트 루트
  ┣ 📂 src/            # 소스코드
