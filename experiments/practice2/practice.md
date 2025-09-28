@@ -54,6 +54,30 @@ RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인
 ---
 본 실습에서는 `wall_follower_node`를 통해 `/drive` 토픽을 퍼블리시하여 조향각 및 속도 제어 실험을 진행하였다.<br>
 
+<img width="2078" height="542" alt="image" src="https://github.com/user-attachments/assets/9c86f76d-83b7-40e2-93fa-226831c39571" />
+<br>
+
+  - 첫 번째 터미널
+```bash
+cd ~/sim_ws
+. install/setup.bash
+ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+```
+
+- 두 번째 터미널
+```bash
+cd ~/sim_ws
+. install/setup.bash
+ros2 run wall_following_pkg wall_follower_node
+```
+
+- 세 번째 터미널
+```bash
+cd ~/sim_ws
+. install/setup.bash
+rqt_graph
+```
+
 
 ## 3. 실습 결과
 ---
@@ -99,8 +123,12 @@ RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인
 ---
 ### 2. 남지연 (09/28)
 <br>
+##### 첫 번째 실습
 <img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/cdad5491-2740-4d3f-875a-87e3c790464d" />
 
 <br> 
 게속해서 퍼블리시하는 모습  <br>
 <img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/3a0115e0-9328-40eb-bb46-cc76501db94c" />
+
+##### 두 번째 실습
+<img width="440" height="415" alt="image" src="https://github.com/user-attachments/assets/c1ca8f7b-b71f-47fa-90b3-327a3d42c9a7" />
