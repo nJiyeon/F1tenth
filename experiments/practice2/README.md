@@ -24,8 +24,8 @@
   - steering 값을 바꿔가면서 차량 반응 관찰 (튕겨나감, 붙어서 달림 등)
 
 **4) 검증**
-  - `rqt_graph`: /scan → wall_follower_node → /drive 연결 확인
-  - `rqt_plot`: 라이다 값 변화 확인 (선택적)<br><br><br>
+  - rqt_graph: `/scan` → `wall_follower_node` → `/drive` 연결 확인
+  - rqt_plot: 라이다 값 변화 확인 (선택적)<br><br><br>
 
 ## 3. 제출 방식
 - `practice.md` 파일에 실습 과정 기록
