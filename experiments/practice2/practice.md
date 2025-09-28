@@ -16,7 +16,7 @@
 
 ---
 ## 3. 실습 결과
-
+---
 ### 1. 윤우린 (09/29)
 
 #### 이론 학습
@@ -25,6 +25,11 @@
 - SLAM
   
 #### wall_follow_node.py 분석
+- `WallFollow` 클래스는 `rclpy.node.Node`를 상속 → ROS2 노드.
+- `/scan` 토픽 구독 (라이다 센서값: `LaserScan`)
+- `/drive` 토픽 발행 (차량 제어: `AckermannDriveStamped`)
+  
+#### wall_follow_node.py 핵심 method
 1. get_range(range_data, angle) 
 : 특정 각도에서 라이다 거리값을 리턴하는 함수
 2. get_error(range_data, dist) 
@@ -44,3 +49,12 @@
 #### 터미널 로그 
 <img width="553" height="178" alt="Image" src="https://github.com/user-attachments/assets/1c7450eb-eb32-497f-a956-01e7d35a5717" />
 
+#### 문제 발생 및 해결
+1. 문제 : ros2 run wall_follow wall_follow 실행 후에 시뮬레이터에서 차량이 움직이지 않음
+2. 해결 흐름
+   - 토픽 연결 확인 : ros2 topic list
+   - dirve 메세지 정보 확인 : ros2 topic info /drive
+   => publisher count가 0인 문제 발생. 
+   ##### 즉, wall_follow 노드가 /drive에 메시지 발행을 안하는 상황임.
+---
+### 2. 
