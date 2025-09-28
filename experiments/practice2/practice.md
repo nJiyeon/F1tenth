@@ -87,7 +87,7 @@ RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인
    => publisher count가 0인 문제 발생. 
    ##### 즉, wall_follow 노드가 /drive에 메시지 발행을 안하는 상황임.
 ---
-### 2. 남지연
+### 2. 남지연 (09/28)
 <br>
 <img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/cdad5491-2740-4d3f-875a-87e3c790464d" />
 
