@@ -5,13 +5,43 @@
 - `f110-GymROS`를 활용한 Wall Following 알고리즘 구현 및 검증
 
 ---
-## 2. 학습 내용
-  
-- **작성자** : 
-- **작성일** : 2025-09-29
-- **목표:** 
+- **작성자** : 남지연
+- **작성일** : 2025-09-28 (일)
+- **목표:** <br>
+RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인하고, `/drive` 토픽으로 직접 조향각과 속도를 퍼블리시하여 차량의 움직임을 실시간으로 관찰한다. 이를 통해 LiDAR 데이터의 변화를 이해하고 조향각 변화가 차량 주행에 미치는 영향을 실습한다.<br>
 
 **<학습 내용 정리>**<br>
+
+**1)환경 준비**
+  - `sim_ws` 워크스페이스를 빌드하고 `source install/setup.bash`로 환경 설정을 완료했다.
+  - `ros2 launch f1tenth_gym_ros gym_bridge_launch.py` 명령으로 시뮬레이터 및 RViz를 실행하고 `/scan` 토픽이 정상적으로 수신되는지 확인하였다.
+  - `ros2 topic echo /scan`을 통해 LiDAR 거리값이 실시간으로 출력되는 것을 확인하였다.
+<br>
+
+**2) 차량 제어 실험**
+  - 새로운 터미널에서 ROS 2 환경을 소스한 뒤 `/drive` 토픽으로 AckermannDriveStamped 메시지를 직접 퍼블리시하였다.
+ - speed는 1.0으로 고정하고, steering_angle을 0.0, 0.3, -0.3 등으로 변경하여 차량이 직진, 좌회전, 우회전하는 반응을 관찰하였다.
+<br>
+
+**3) 결과 및 관찰**
+  - 조향각을 변경하자 RViz에서 차량 모델이 회전하며 벽과의 거리가 달라지고, `/scan` 값이 변하는 것을 확인할 수 있었다.
+  - `steering_angle`이 양수일 때 차량은 왼쪽으로, 음수일 때 오른쪽으로 회전하는 것을 실습으로 검증하였다.
+<br>
+
+**4) 검증**
+  - `rqt_graph`에서 `/drive` 토픽 퍼블리시 노드가 활성화된 것을 확인하였다.
+
+  - 실행하지 않고 있을 때<br><br>
+    <img width="366" height="400" alt="image" src="https://github.com/user-attachments/assets/caab89c1-be99-44fa-b77c-050a8e2d3fde" />
+
+    <br>
+
+
+  - 실행하였을 때<br>
+  : 브리지가 `/drive` 구독 중이므로 차량이 움직일 준비 완료<br>
+    <img width="440" height="415" alt="image" src="https://github.com/user-attachments/assets/5fec54fc-7ddb-40dc-8d44-cacfb77254c7" />
+    <br>
+    <img width="2045" height="606" alt="image" src="https://github.com/user-attachments/assets/4908a471-a607-4ce0-a840-e38e5df94fc6" />
 
 
 ---
@@ -57,4 +87,10 @@
    => publisher count가 0인 문제 발생. 
    ##### 즉, wall_follow 노드가 /drive에 메시지 발행을 안하는 상황임.
 ---
-### 2. 
+### 2. 남지연
+<br>
+<img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/cdad5491-2740-4d3f-875a-87e3c790464d" />
+
+<br> 
+게속해서 퍼블리시하는 모습  <br>
+<img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/3a0115e0-9328-40eb-bb46-cc76501db94c" />
