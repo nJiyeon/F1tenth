@@ -10,28 +10,32 @@
 - **작성일** : 2025-09-28 (일)
 - **목표:** <br>
 RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인하고, `/drive` 토픽으로 직접 조향각과 속도를 퍼블리시하여 차량의 움직임을 실시간으로 관찰한다. 이를 통해 LiDAR 데이터의 변화를 이해하고 조향각 변화가 차량 주행에 미치는 영향을 실습한다.<br>
-본 실습에서는 `wall_follower_node` 대신 직접 터미널에서 `/drive` 토픽을 퍼블리시하여 조향각 및 속도 제어 실험을 진행하였다.
 
-**<학습 내용 정리>**<br>
+**<학습 내용 정리> - (1)**<br>
+---
+: 본 실습에서는 `wall_follower_node` 대신 직접 터미널에서 `/drive` 토픽을 퍼블리시하여 조향각 및 속도 제어 실험을 진행하였다.<br>
 
 **1)환경 준비**
-  - `sim_ws` 워크스페이스를 빌드하고 `source install/setup.bash`로 환경 설정을 완료했다.
-  - `ros2 launch f1tenth_gym_ros gym_bridge_launch.py` 명령으로 시뮬레이터 및 RViz를 실행하고 `/scan` 토픽이 정상적으로 수신되는지 확인하였다.
-  - `ros2 topic echo /scan`을 통해 LiDAR 거리값이 실시간으로 출력되는 것을 확인하였다.
+  - sim_ws 워크스페이스를 빌드하고 source install/setup.bash로 ROS 2 환경을 설정하였다.
+  - `ros2 launch f1tenth_gym_ros gym_bridge_launch.py` 명령으로 시뮬레이터와 RViz를 실행하였다.
+  - `ros2 topic echo /scan`을 통해 LiDAR 센서 값이 시뮬레이터에서 정상적으로 퍼블리시되고 있음을 확인하였다.
+  - `ros2 topic info /drive`로 차량 제어 명령을 받을 수 있는 구독자가 존재함(브리지 노드)을 확인하였다.
 <br>
 
 **2) 차량 제어 실험**
-  - 새로운 터미널에서 ROS 2 환경을 소스한 뒤 `/drive` 토픽으로 AckermannDriveStamped 메시지를 직접 퍼블리시하였다.
- - speed는 1.0으로 고정하고, steering_angle을 0.0, 0.3, -0.3 등으로 변경하여 차량이 직진, 좌회전, 우회전하는 반응을 관찰하였다.
+  - 별도의 제어 노드를 만들지 않고, 새로운 터미널에서 ROS 2 환경을 소스한 후 `/drive` 토픽으로 AckermannDriveStamped 메시지를 직접 퍼블리시하였다.
+  - speed는 1.0으로 고정하고, steering_angle을 0.0, 0.3, -0.3 등으로 수동 변경하며 차량이 직진, 좌회전, 우회전하는 반응을 실험하였다
 <br>
 
 **3) 결과 및 관찰**
-  - 조향각을 변경하자 RViz에서 차량 모델이 회전하며 벽과의 거리가 달라지고, `/scan` 값이 변하는 것을 확인할 수 있었다.
-  - `steering_angle`이 양수일 때 차량은 왼쪽으로, 음수일 때 오른쪽으로 회전하는 것을 실습으로 검증하였다.
+  - 조향각을 변경하면 RViz에서 차량 모델이 회전하고, 그에 따라 `/scan` 토픽의 거리값 배열이 변하는 것을 확인하였다.
+  - `steering_angle`이 양수일 때 왼쪽으로, 음수일 때 오른쪽으로 차량이 회전함을 실습으로 검증하였다.
+  - 센서 값은 단순히 확인만 하고, 제어 로직에는 사용하지 않았으므로 차량은 항상 지정된 steering_angle로만 움직였다.
 <br>
 
 **4) 검증**
-  - `rqt_graph`에서 `/drive` 토픽 퍼블리시 노드가 활성화된 것을 확인하였다.
+  - `rqt_graph`에서 `/drive` 토픽 구독자(/bridge 노드)가 존재함을 확인하여 제어 명령이 시뮬레이터에 전달될 준비가 되어 있음을 검증하였다.
+  - `/scan` 토픽은 퍼블리시되고 있으나 서브스크라이버가 없어 `/scan → (노드)` 연결선은 나타나지 않는다.
 
   - 실행하지 않고 있을 때<br><br>
     <img width="366" height="400" alt="image" src="https://github.com/user-attachments/assets/caab89c1-be99-44fa-b77c-050a8e2d3fde" />
@@ -46,7 +50,11 @@ RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인
     <img width="2045" height="606" alt="image" src="https://github.com/user-attachments/assets/4908a471-a607-4ce0-a840-e38e5df94fc6" />
 
 
+**<학습 내용 정리> - (2)**<br>
 ---
+본 실습에서는 `wall_follower_node`를 통해 `/drive` 토픽을 퍼블리시하여 조향각 및 속도 제어 실험을 진행하였다.<br>
+
+
 ## 3. 실습 결과
 ---
 ### 1. 윤우린 (09/29)
