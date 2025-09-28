@@ -15,7 +15,7 @@ RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인
 ---
 : 본 실습에서는 `wall_follower_node` 대신 직접 터미널에서 `/drive` 토픽을 퍼블리시하여 조향각 및 속도 제어 실험을 진행하였다.<br>
 
-**1)환경 준비**
+**1) 환경 준비**
   - sim_ws 워크스페이스를 빌드하고 source install/setup.bash로 ROS 2 환경을 설정하였다.
   - `ros2 launch f1tenth_gym_ros gym_bridge_launch.py` 명령으로 시뮬레이터와 RViz를 실행하였다.
   - `ros2 topic echo /scan`을 통해 LiDAR 센서 값이 시뮬레이터에서 정상적으로 퍼블리시되고 있음을 확인하였다.
