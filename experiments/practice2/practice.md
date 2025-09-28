@@ -17,10 +17,10 @@
 ---
 ## 3. 실습 결과
 
-1. 윤우린 (09/29)
+### 1. 윤우린 (09/29)
 
-### 실습 결과 화면 
+#### 실습 결과 화면 
 <img width="931" height="407" alt="Image" src="https://github.com/user-attachments/assets/fcfcc659-d25f-49cf-9a03-eb401e578060" />
 
-### 터미널 로그 
+#### 터미널 로그 
 <img width="553" height="178" alt="Image" src="https://github.com/user-attachments/assets/1c7450eb-eb32-497f-a956-01e7d35a5717" />
