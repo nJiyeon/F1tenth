@@ -143,7 +143,6 @@ rqt_graph
    ##### 즉, wall_follow 노드가 /drive에 메시지 발행을 안하는 상황임.
 ---
 ### 2. 남지연 (09/28)
-<br>
 
 ##### 첫 번째 실습
 <img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/cdad5491-2740-4d3f-875a-87e3c790464d" />
@@ -151,6 +150,8 @@ rqt_graph
 <br> 
 게속해서 퍼블리시하는 모습  <br>
 <img width="780" height="317" alt="image" src="https://github.com/user-attachments/assets/3a0115e0-9328-40eb-bb46-cc76501db94c" />
+
+<br>
 
 ##### 두 번째 실습
 <img width="440" height="415" alt="image" src="https://github.com/user-attachments/assets/c1ca8f7b-b71f-47fa-90b3-327a3d42c9a7" />
