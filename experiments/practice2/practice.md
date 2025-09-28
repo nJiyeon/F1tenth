@@ -54,9 +54,14 @@ RViz와 f1tenth_gym_ros 시뮬레이터를 활용해 `/scan` 데이터를 확인
 ---
 본 실습에서는 `wall_follower_node`를 통해 `/drive` 토픽을 퍼블리시하여 조향각 및 속도 제어 실험을 진행하였다.<br>
 
-<img width="2078" height="542" alt="image" src="https://github.com/user-attachments/assets/9c86f76d-83b7-40e2-93fa-226831c39571" />
+**1) 환경 준비**
+- sim_ws/src 안에 새로운 패키지 **wall_following_pkg**를 생성하였다.
+  ( 이 과정에서 pkg 생성에 오류가 뜸 -> 따라서 pip empty 버전을 낮춰야 함 )
+- `setup.py`에 `entry_points`를 추가하고, `package.xml`에 `rclpy`, `sensor_msgs`, `ackermann_msgs` 의존성을 추가하였다.
+- `wall_follower_node.py`를 작성하여 `/scan` 토픽을 구독하고, 일정 거리 이하일 경우 조향각(steering_angle=0.5)을 퍼블리시하도록 구현하였다.
 <br>
 
+**2) 차량 제어 실험**
   - 첫 번째 터미널
 ```bash
 cd ~/sim_ws
@@ -70,6 +75,19 @@ cd ~/sim_ws
 . install/setup.bash
 ros2 run wall_following_pkg wall_follower_node
 ```
+<br>
+
+
+**3) 결과 및 관찰**
+- RViz 화면에서 차량이 벽 근처로 접근할 때 조향각이 적용되어 왼쪽으로 회전하는 것을 확인하였다.
+- `/scan` 토픽 값이 변할 때마다 로그 메시지로 front distance와 steering angle이 출력되어 로직이 정상적으로 실행되고 있음을 검증할 수 있었다.
+- `steering_angle`이 양수일 때 차량이 왼쪽으로 회전, 0일 때 직진하는 동작을 실제로 확인하였다
+  
+<br>
+
+**4) 검증**
+- `rqt_graph` 실행 결과, `/scan → wall_follower_node → /drive` 연결이 생성되어 데이터 흐름이 정상적으로 형성되었음을 확인하였다.
+<br>
 
 - 세 번째 터미널
 ```bash
@@ -77,6 +95,9 @@ cd ~/sim_ws
 . install/setup.bash
 rqt_graph
 ```
+<br>
+
+<img width="2078" height="542" alt="image" src="https://github.com/user-attachments/assets/9c86f76d-83b7-40e2-93fa-226831c39571" />
 
 
 ## 3. 실습 결과
