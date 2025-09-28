@@ -20,7 +20,7 @@
 - [x] 남지연 → 수행 계획서 LMS 제출하기 (~9/23)
 - [x] 남지연 → gitbub repository 만들기 (9/23)
 - [x] 남지연 → tutlesim 실습 완료 (~9/24)
-- [ ] 김시후 → tutlesim 실습 완료 (~9/24)
+- [x] 김시후 → tutlesim 실습 완료 (~9/24)
 - [x] 윤우린 → tutlesim 실습 완료 (~9/24)
 - [x] 이태웅 → tutlesim 실습 완료 (~9/24)
 
