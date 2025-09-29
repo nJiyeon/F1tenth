@@ -170,3 +170,14 @@ rqt_graph
 ### 해결방법
 1.pip3 install "coverage<6.0" --force-reinstall 을통해 5.x버전으로 재설치
 2. pip3 install "numba<0.57" --force-reinstall numba버전도 호환버전으로 재설치
+
+
+
+### 3.김시후 (09/29)
+
+##### 실습 결과 
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/7dcb91df-a5cb-446c-8a01-c58d4e8e8f7a" />
+
+<img width="1910" height="1079" alt="Image" src="https://github.com/user-attachments/assets/9264b4a8-3838-4b76-97c0-489db4ed6987" />
+
+<img width="1913" height="1077" alt="Image" src="https://github.com/user-attachments/assets/da0633cf-6baa-445b-99ad-1bf29b2050a1" />
