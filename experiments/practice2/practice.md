@@ -155,3 +155,18 @@ rqt_graph
 
 ##### 두 번째 실습
 <img width="440" height="415" alt="image" src="https://github.com/user-attachments/assets/c1ca8f7b-b71f-47fa-90b3-327a3d42c9a7" />
+
+---
+
+### 3.이태웅 (09/29)
+
+##### 실습 결과 
+<img width="1162" height="804" alt="image" src="https://github.com/user-attachments/assets/a138f224-da1b-42f1-891c-3c3f9941140f" />
+
+<img width="1442" height="826" alt="image" src="https://github.com/user-attachments/assets/74eb29dc-24ac-4b5e-96e3-25e699bd019f" />
+
+###  문제점
+1. coverage와 numba 버전이 높아 gym파일이 제대로 실행이 안되어 rviz 내에 차량이 움직이지 않음
+### 해결방법
+1.pip3 install "coverage<6.0" --force-reinstall 을통해 5.x버전으로 재설치
+2. pip3 install "numba<0.57" --force-reinstall numba버전도 호환버전으로 재설치
