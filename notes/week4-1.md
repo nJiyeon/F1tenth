@@ -19,7 +19,7 @@
 - [ ] 10/1 대면 랩미팅 전까지 각자 개념 공부하기
 
 ### 📍 회의 사진
-<img width="2279" height="1219" alt="image" src="https://github.com/user-attachments/assets/f057789c-f674-42af-93a2-ed6eb03133fb" />
+<img width="679" height="419" alt="image" src="https://github.com/user-attachments/assets/f057789c-f674-42af-93a2-ed6eb03133fb" />
 
 ---
 
