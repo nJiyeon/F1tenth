@@ -9,7 +9,7 @@
 
 
 ### 1. 실습 내용
-1) Pure Pursuit 노드 작성 : '/odom' + '/path' 구독 & '/drive' 발행
+1) Pure Pursuit 노드 작성 : `/odom` + `/path` 구독 & `/drive` 발행
 - `/odom` 또는 `/pose` 토픽을 통해 차량의 현재 위치(x, y, yaw) 정보를 받음
 - 미리 정의된 경로(waypoints) 중 차량의 진행 방향에 가장 가까운 목표점을 계산
 - 목표점까지의 거리(`L = look-ahead distance`)와 차량의 방향각을 이용해 조향각 계산
