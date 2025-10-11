@@ -19,8 +19,6 @@
 >
 > <img width="227" height="68" alt="{4C8EE385-C37C-49C9-923B-831D33CAE559}" src="https://github.com/user-attachments/assets/ea97b4eb-c6ad-4220-b770-c135df68131d" />
 
-
-
 ### 1. 실습 내용
 1) Pure Pursuit 노드 작성 : `/odom` + `/path` 구독 & `/drive` 발행
   
