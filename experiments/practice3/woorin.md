@@ -23,7 +23,10 @@
       
 ### 2. 실습 결과 사진
 - 명령창
+<img width="799" height="299" alt="Image" src="https://github.com/user-attachments/assets/50293731-0f88-48b2-8aed-06fc7a3ec97b" />
+
 - Rviz 
+<img width="318" height="261" alt="Image" src="https://github.com/user-attachments/assets/fe429007-79ef-4927-aeb7-544604d91c63" />
 
 ### 3. 결론
 1) Kp만 크게 설정 : 오차가 감소, But 차량이 벽과 가까워졌다 멀어지는 진동 발생
