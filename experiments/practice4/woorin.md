@@ -31,6 +31,8 @@
   - **곡선 구간에서 차량의 안정성을 높이고, 전체 주행 효율성을 향상시킴**
 
 ### 2. 실습 결과 사진
+- L값 = 1.5로 설정한 초기 실험
+
 <img width="796" height="309" alt="{39120509-1D6E-4B7D-ADB0-075530F62503}" src="https://github.com/user-attachments/assets/6aafd554-8ed5-4ce4-99f1-16d6ddb5f9da" />
 
 ### 3. 실습 결과 및 분석
