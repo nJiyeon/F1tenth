@@ -4,14 +4,13 @@
 
 ### 0. Pure pursuit 핵심 개념
 > 차량이 현재 위치에서 일정 거리 앞(lookahead distance, L)에 있는 목표점을 향하도록  조향각(steering angle)을 계산하는 방식.
->
 > 즉, 차량 중심이 원의 중심이 되도록 “현재 위치 → 목표점”을 지나는 원의 곡률(curvature)을 계산하고 그 곡률을 이용해 조향각을 결정
 > **주요 개념**
 > L (lookahead distance) : 차량이 현재 위치에서 바라볼 목표지점까지의 거리
 > a (alpha) : 차량의 진행 방향과 목표지점 사이의 각도
 > theta (steering angle) : 조향각
 > 핵심 공식
-  <img width="227" height="68" alt="{4C8EE385-C37C-49C9-923B-831D33CAE559}" src="https://github.com/user-attachments/assets/ea97b4eb-c6ad-4220-b770-c135df68131d" />
+> <img width="227" height="68" alt="{4C8EE385-C37C-49C9-923B-831D33CAE559}" src="https://github.com/user-attachments/assets/ea97b4eb-c6ad-4220-b770-c135df68131d" />
 
 
 
