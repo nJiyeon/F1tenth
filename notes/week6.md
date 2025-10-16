@@ -18,3 +18,7 @@
 <br>
 
 ## 회의 사진
+<img width="778" height="543" alt="image" src="https://github.com/user-attachments/assets/710a9d67-c135-4da8-a26e-6feaf0ceec63" />
+<img width="467" height="628" alt="image" src="https://github.com/user-attachments/assets/1fe74b21-e7c0-4533-b5ad-d31e0967e001" />
+<img width="461" height="621" alt="image" src="https://github.com/user-attachments/assets/cf7f1121-740b-433c-9564-beaacc4df684" />
+<img width="808" height="599" alt="image" src="https://github.com/user-attachments/assets/c3513428-1a8b-4ac3-a7ee-a4a0d9cc54ed" />
