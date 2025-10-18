@@ -1,5 +1,5 @@
 # 학습 내용 기록 - 김시후  
-**학습 일자 | 2025-10-11 (토)**  
+**학습 일자 | 2025-10-18 (토)**  
 
 ## 1. 실습 주제  
 LiDAR와 Pure Pursuit 알고리즘을 이용해 차량이 미리 설정된 경로를 따라가도록 구현하는 실습.  
@@ -32,6 +32,7 @@ Look-Ahead Distance(L 값)를 조정하면서 차량의 반응성과 안정성�
 ros2 run pure_pursuit_pkg pure_pursuit_node --ros-args \
 -p lookahead_distance:=1.5 \
 -p odom_topic:=/ego_racecar/odom
+```
 
 ## 4. 실험 결과
 L이 작을 때 (0.5~1.0m): 곡선을 잘 따라가지만 차량이 흔들림.
