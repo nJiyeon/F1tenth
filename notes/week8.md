@@ -1,8 +1,10 @@
 # 정기회의
 
 날짜: 2025년 10월 29일
+![KakaoTalk_Photo_2025-10-30-09-22-40](https://github.com/user-attachments/assets/f716998e-31de-4b72-8840-bb71b8fb71ef)
 
-![image.png](%EC%A0%95%EA%B8%B0%ED%9A%8C%EC%9D%98/image.png)
+
+
 
 장소: 공대9호관 502호
 
