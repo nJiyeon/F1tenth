@@ -1,4 +1,4 @@
-# 정기회의 - week 8
+# 정기회의 - WEEK 8
 <img width="400" height="303" alt="image" src="https://github.com/user-attachments/assets/d11091ce-e238-459e-abb2-0b04e2683068" />
 
 
