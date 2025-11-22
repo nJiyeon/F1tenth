@@ -1,4 +1,4 @@
-# Practice 5: RVIZ 시뮬레이션
+# Practice 5: SLAM 기반 맵 구축 및 자율주행 환경 설정 실습
 <img width="228" height="300" alt="image" src="https://github.com/user-attachments/assets/2f6f8d16-8041-4ece-8147-8f2b247af818" />
 
 <br><br>
