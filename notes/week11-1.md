@@ -13,7 +13,7 @@
 ---
 
 ### ✅ To-Do
-- [ ] 남지연 → EKF-SLAM (대체 Localization) 학습 & github /docs에 정리, median filter 적용 방식 공부하기, 논문 발표 준비하기
+- [x] 남지연 → EKF-SLAM (대체 Localization) 학습 & github /docs에 정리, median filter 적용 방식 공부하기, 논문 발표 준비하기
 - [ ] 윤우린 → INN (대체 Localization), 센서 퓨전 학습 & github /docs에 정리, mppi 코드 깃허브 업로드
 - [ ] 이태웅 → NDT (대체 Localization), 센서 퓨전 학습 & github /docs에 정리, fgm 코드 깃허브 업로드 하기
 - [ ] 김시후 → SW 등록 작성
