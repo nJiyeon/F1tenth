@@ -8,4 +8,6 @@
 | **Encoder** | 바퀴 회전 수 | 로봇의 **상대적인 움직임** (오도메트리) 추정. | 바퀴 미끄러짐(**Slippage**) 발생 시 오차 발생. |
 
 
-<span style="color:red">BUT</span>
+### 현재 프로젝트의 상황 
+- 센서 퓨전 방식 적용은, 현재 저희가 보유중인 장비로는 lidar랑 depth camera, imu가 있는데 차량에 설치 되어 있지는 않아서, 부착한 후에 **depth carmera로 vision slam이나 obstacle detection**을 하는 방법이 가능할 것 같습니다. 
+- 추가적으로 **odom 보정을 imu 기반**으로 할 수도 있을거 같습니다.
