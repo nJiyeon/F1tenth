@@ -8,4 +8,4 @@
 | **Encoder** | 바퀴 회전 수 | 로봇의 **상대적인 움직임** (오도메트리) 추정. | 바퀴 미끄러짐(**Slippage**) 발생 시 오차 발생. |
 
 
-<span style="color:red>red</span>
+<span style="color:red">BUT</span>
