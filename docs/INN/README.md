@@ -1,4 +1,4 @@
-### . 🧠 INN (Inertial Neural Network) 또는 딥러닝 기반 센서 퓨전
+### 🧠 INN (Inertial Neural Network) 또는 딥러닝 기반 센서 퓨전
 
 ---
 
