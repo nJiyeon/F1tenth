@@ -55,8 +55,8 @@
 - [x] 4층 DIY실 예약하기
 ---
 ### 회의 사진
-<img width="221" height="307" alt="image" src="https://github.com/user-attachments/assets/ed1a8152-c77d-4e45-92b3-9ee11b13497f" />
-<img width="402" height="297" alt="image" src="https://github.com/user-attachments/assets/75db8a4c-b8b6-490a-a91f-bba8a79033e0" />
+<img width="410" height="297" alt="image" src="https://github.com/user-attachments/assets/b9c2c86b-0ed6-4939-997f-e324a8962a93" />
+
 
 
 ### 차기 회의 일정
