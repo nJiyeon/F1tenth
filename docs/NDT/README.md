@@ -70,7 +70,7 @@ Gaussian 기반 cost function이 smooth
 
 ---
 
-# 6️⃣ **단점**
+#  **단점**
 
 ### 1. 계산량이 ICP보다 많을 수 있음
 
