@@ -1,8 +1,3 @@
-[ㅁㅁㅁ 2b66d47cdeb3804e9c6bcf1ef20da3a1.md](https://github.com/user-attachments/files/23736019/2b66d47cdeb3804e9c6bcf1ef20da3a1.md)
-# ㅁㅁㅁ
-
-Status: 시작 전
-프로젝트: cs스터디 (https://www.notion.so/cs-1016d47cdeb380b3a610deccac7d6634?pvs=21)
 
 ---
 
