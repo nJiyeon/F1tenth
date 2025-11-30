@@ -1,0 +1,40 @@
+mppi:
+  ros__parameters:
+    visualize: True
+    hz: 10
+
+    # Publisher Parameters
+    trajectory_topic: "/safe_trajectory"  # 안전 경로 퍼블리시 토픽
+    cost_map_topic: "/cost_map"           # 코스트맵 시각화 토픽
+    marker_topic: "/markers"              # 마커 시각화 토픽
+    occupancy_topic: "/local_map"         # Occupancy grid 구독 토픽
+    
+    # 차량 물리 파라미터
+    wheelbase: 0.33      # 휠베이스 (m)
+    max_steer: 0.8378    # 최대 조향각 (rad)
+    
+    # 차량 제어 파라미터
+    min_throttle: 0.75   # 최소 속도 (m/s)
+    max_throttle: 1.0   # 최대 속도 (m/s)
+    
+    # MPPI 경로 샘플링 파라미터
+    dt: 0.1                   # 시간 간격 (s)
+    num_trajectories: 200     # 샘플링할 궤적 수  (계산 횟수, 기본값 100)
+    steps_trajectories: 20    # 각 궤적의 스텝 수 (궤적의 길이, 기본값 15)
+    v_sigma: 0.05            # 속도 노이즈 표준편차 (기본값 0.05)
+    omega_sigma: 0.2         # 조향 각속도 노이즈 표준편차 (기본값 0.2)
+    
+    # 코스트맵 및 비용 함수 파라미터
+    cost_map_res: 0.05        # 코스트맵 해상도 (m/cell) - 5cm
+    cost_map_width: 100       # 코스트맵 크기 (cells)
+    raceline_dilation: 3      # 주행라인 확장 크기 (cells)
+    heading_weight: 0.0       # 방향 비용 가중치
+    raceline_weight: 1.0      # 주행라인 이탈 비용 가중치
+    obstacle_weight: 1.5      # 장애물 비용 가중치
+
+    # 장애물 감지 파라미터 (mppi_controller_integrated.cpp 사용시)
+    scan_topic: "/scan"
+    grid_resolution: 0.05
+    grid_width: 100
+    grid_height: 100
+    obstacle_dilation: 5

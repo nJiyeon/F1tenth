@@ -1,0 +1,11 @@
+waypoint_path: "251104.csv"
+
+gym_ros_odom_topic: "/ego_racecar/odom"
+gym_ros_scan_topic: "/scan"
+gym_ros_frame: "ego_racecar/laser"
+
+racecar_odom_topic: "/pf/pose/odom"
+racecar_scan_topic: "/scan"
+racecar_frame: "laser"
+
+mppi_controller: "cpp_integrated"  # Options: "cpp_integrated", "cpp"

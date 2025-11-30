@@ -1,0 +1,11 @@
+obstacle_detector:
+  ros__parameters:
+    grid_height: 100
+    grid_resolution: 0.05
+    grid_width: 100
+    obstacle_dilation: 6
+    occupancy_topic: /local_map
+    scan_topic: /scan
+    use_sim_time: false
+    vehicle_frame: laser
+

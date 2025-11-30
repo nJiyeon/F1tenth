@@ -1,0 +1,12 @@
+navigation_control:
+  ros__parameters:
+    hz: 10
+    drive_topic: "/drive"
+    trajectory_topic: "/safe_trajectory"
+    v_gain: 0.75
+    lookahead_distance: 0.82461
+    max_reacquire: 20
+    max_speed: 3.0
+    min_speed: 1.5
+    
+    
