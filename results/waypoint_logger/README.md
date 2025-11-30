@@ -1,2 +1,2 @@
 # waypoint_logger
- Waypoint Logger ROS2
+ROS2 기반 waypoint logger 
