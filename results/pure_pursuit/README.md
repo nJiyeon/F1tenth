@@ -1,2 +1,2 @@
 # pure_pursuit
-Pure Pursuit driving algorithm package repository based on ROS2 environment
+ROS2 기반 Pure Pursuit driving algorithm package repository
